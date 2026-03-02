@@ -9,7 +9,7 @@ from shapely.geometry import MultiPolygon, Polygon, box
 from PIL import Image
 
 
-csv_file_path = r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\chicago_tracts_boundaries.csv'#r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\PRECINCTS_2012_20240603.csv'
+csv_file_path = r'..\..\AnaliseExploratoria\chicago_tracts_boundaries.csv'#r'..\..\AnaliseExploratoria\PRECINCTS_2012_20240603.csv'
 api_key = os.environ.get('Google_Maps_Tiles_API')
 output_folder = 'chicago_satellite_tracts_images_large'
 output_txt_file = 'chicago_satellite_tracts_images.txt'

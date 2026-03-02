@@ -119,16 +119,11 @@ def process_images(root_satellite, root_street_view, pictures_txt, result_file, 
         else:
             print(f"{id_}: Falha: {response.status_code}")
 
-# root_satellite = r'C:\Users\Raissa\Documents\dev\TCC\GoogleMaps\chicago_satellite_images_large'
-# root_street_view = r'C:\Users\Raissa\Documents\dev\TCC\City_Street_View_Dataset'
-# images_csv = r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\chicago_random_50_tracts_images.csv'
-# result_file = '50_multi_4o.txt'
-# result_file_clean = '50_multi_4o_clean.txt'
 
 
-root_satellite = r'C:\Users\Raissa\Documents\dev\TCC\GoogleMaps\chicago_satellite_tracts_images_large'
-root_street_view = r'C:\Users\Raissa\Documents\dev\TCC\City_Street_View_Dataset'
-images_csv = r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\final_Chicago_tracts_pic_sat_grouped_util_id.csv'
+root_satellite = r'..\..\GoogleMaps\chicago_satellite_tracts_images_large'
+root_street_view = r'..\..\City_Street_View_Dataset'
+images_csv = r'..\..\AnaliseExploratoria\final_Chicago_tracts_pic_sat_grouped_util_id.csv'
 result_file = 'var_Full_4o_mini.txt'
 result_file_clean = 'var_Full_4o_mini_clean.txt'
 process_images(root_satellite, root_street_view, images_csv, result_file, result_file_clean, prompt, api_key)

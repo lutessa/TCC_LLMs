@@ -151,23 +151,15 @@ def clear_result_file(filename):
                 continue
             
             outfile.write(f"{name}: {message_content}\n")
-#root = r'C:\Users\Raissa\Documents\dev\TCC\City_Street_View_Dataset'
-#txt = r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\Chicago_pictures.txt'
-
-root = r'C:\Users\Raissa\Documents\dev\TCC\GoogleMaps\chicago_satellite_images_large'
-#txt = r"C:\Users\Raissa\Documents\dev\TCC\OpenAI\chicago_satellite_images.txt"
-txt = r'C:\Users\Raissa\Documents\dev\TCC\AnaliseExploratoria\Chicago_satellite_test2.txt'
-#result_file = f'prompt_6_OpenAI_mini_Chicago_satellitetest2.txt'
 
 
-txt = r'C:\Users\Raissa\Documents\dev\TCC\random_satellite_selection.txt'
-#result_file = f'prompt_8_OpenAI_mini_random_satellite_selection.txt'
+root = r'..\..\GoogleMaps\chicago_satellite_images_large'
+txt = r"..\..\OpenAI\chicago_satellite_images.txt"
 
-result_file = f'prompt_{args.prompt}_{model}_random_satellite_selection.txt'
+result_file = f'prompt_{args.prompt}_chicago_satellite_images.txt'
 
-txt = r'C:\Users\Raissa\Documents\dev\TCC\hand_picked.txt'
 
-result_file = f'prompt_{args.prompt}_{model}_hand_picked.txt'
+
 
 process_images(root, txt, result_file, prompt, api_key, batch)
 

@@ -2,15 +2,14 @@ import csv
 import re
 from transformers import pipeline
 
-'Hardware accelerator e.g. GPU is available in the environment, but no `device` argument is passed to the `Pipeline` object. Model will be on CPU.'
 
-# input_file = r'C:\Users\Raissa\Documents\dev\TCC\OpenAI\Full_4o_mini_clean.txt'
+# input_file = r'..\..\OpenAI\Full_4o_mini_clean.txt'
 # output_file = './results_Full_4o_mini_clean.csv'
 # candidate_labels = ["sidewalks","tree-lined streets","porches", "fenced front yards", "attached garages", "cul-de-sacs", "hills", "private front entrances"]
 
 
 
-input_file = r'C:\Users\Raissa\Documents\dev\TCC\OpenAI\var_Full_4o_mini_clean.txt'
+input_file = r'..\..\OpenAI\var_Full_4o_mini_clean.txt'
 output_file = './results_var_Full_4o_mini_clean.csv'
 candidate_labels = ["Yes"]
 
